@@ -5,9 +5,9 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import RootStackParamList from '../navigations/type'
-import { Home, Profile, Explore } from '../screens';
+import { Home, Profile, Explore, News } from '../screens';
 import navigationStrings from '../Constants/navigationStrings';
-
+import LoginRotes from './LoginRotes';
 
 const Stack = createNativeStackNavigator<RootStackParamList>()
 
@@ -18,6 +18,7 @@ const Routes: React.FC = () => {
             <Stack.Screen name={navigationStrings.HOME}    component={Home}    />
             <Stack.Screen name={navigationStrings.PROFILE} component={Profile} />
             <Stack.Screen name={navigationStrings.EXPLORE} component={Explore} />
+            <Stack.Screen name={navigationStrings.LOGINROUTES} component={LoginRotes} />
         </Stack.Navigator>
     </NavigationContainer>
   )

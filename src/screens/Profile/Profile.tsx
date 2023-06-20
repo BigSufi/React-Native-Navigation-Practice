@@ -15,7 +15,7 @@ interface ProfileProps {
 
 const Profile: React.FC<ProfileProps> = ({ navigation, route }) => {
 
-  const username = route.params.username
+  const username = route.params?.username
 
   return (
     <View style={{flex:1}}>
