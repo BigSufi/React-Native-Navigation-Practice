@@ -20,10 +20,10 @@ const Explore:React.FC<ExploreProps> = ({route, navigation}) => {
       <Text style={{fontSize:20}}>Explore: {username}</Text>
 
       <TouchableOpacity
-        onPress={()=>navigation.navigate('Home', {homeName:username})}
+        onPress={()=>navigation.navigate('LoginRotes')}
         style={{ backgroundColor: 'red', paddingVertical: 10, borderRadius:150, paddingHorizontal: 30 }}>
         
-        <Text style={{color:'white', fontWeight:'700'}}>Go to Home</Text>
+        <Text style={{color:'white', fontWeight:'700'}}>Go to News</Text>
       </TouchableOpacity>
     </View>
   )
